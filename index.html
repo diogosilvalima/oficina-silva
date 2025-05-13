@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oficina Silva - Marcenaria Moderna</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header, section, footer {
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #555;
+      padding-left: 0.5rem;
+    }
+
+    .services, .benefits, .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-around;
+    }
+
+    .card {
+      background-color: #fafafa;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      flex: 1 1 250px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea, button {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+
+    footer {
+      background-color: #f4f4f4;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .services, .benefits, .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Oficina Silva</h1>
+    <p>Marcenaria sob medida com qualidade e modernidade</p>
+  </header>
+
+  <section>
+    <h2 class="section-title">Sobre Nós</h2>
+    <p>A Oficina Silva atua há mais de 10 anos no mercado, oferecendo móveis planejados com excelência, design moderno e acabamento profissional. Atendemos São Paulo e região com agendamento flexível.</p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Serviços</h2>
+    <div class="services">
+      <div class="card">Móveis Planejados</div>
+      <div class="card">Restauração de Móveis</div>
+      <div class="card">Montagem e Instalação</div>
+      <div class="card">Consultoria em Design de Interiores</div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Vantagens</h2>
+    <div class="benefits">
+      <div class="card">Materiais de alta durabilidade</div>
+      <div class="card">Atendimento personalizado</div>
+      <div class="card">Garantia de entrega no prazo</div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Contato</h2>
+    <form>
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu email" required>
+      <input type="tel" name="telefone" placeholder="Seu telefone">
+      <textarea name="mensagem" rows="4" placeholder="Descreva seu projeto"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section>
+    <h2 class="section-title">Portfólio</h2>
+    <div class="gallery">
+      <div class="card"><img src="images/moveis-planejados.png" alt="Móveis Planejados" style="width:100%"><p>Móveis Planejados</p></div>
+      <div class="card"><img src="images/restauracao.png" alt="Restauração de Móveis" style="width:100%"><p>Restauração</p></div>
+      <div class="card"><img src="images/montagem.png" alt="Montagem e Instalação" style="width:100%"><p>Montagem</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Oficina Silva. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
